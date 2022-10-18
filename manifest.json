@@ -1,0 +1,9 @@
+{
+  "name": "Tab Title",
+  "description": "A extension which fetches the Title of the Present Tab",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  }
+}

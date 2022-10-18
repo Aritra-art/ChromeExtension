@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+#check {
+  margin: 20px 20px;
+  cursor: pointer;
+  padding: 1.2rem;
+  border-radius: 1rem;
+  border: 2px solid orange;
+  background-color: white;
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  transition: 400ms ease-in-out;
+}
+
+#check:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: orange;
+  color: white;
+}
+
+.outputText {
+  margin: 20px 20px;
+  font-size: 2rem;
+  font-weight: bold;
+}
