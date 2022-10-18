@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chrome Extension</title>
+</head>
+
+<body>
+  <h3 class="outputText">Initial Text</h3>
+  <button id="check">Get Name</button>
+
+</body>
+<script>
+  const title = document.querySelector('title');
+  const nameBtn = document.querySelector("#check");
+  const outputText = document.querySelector(".outputText");
+
+  const nameEventHandler = () => {
+    outputText.textContent = title.innerText;
+  }
+
+  nameBtn.addEventListener('click', nameEventHandler)
+
+  console.log(title.innerText);
+</script>
+
+</html>
