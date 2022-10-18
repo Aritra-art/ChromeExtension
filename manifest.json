@@ -6,6 +6,9 @@
   "action": {
     "default_popup": "index.html"
   },
+  "icons": {
+    "16": "logo.png"
+  },
   "permissions": ["tabs", "scripting"],
   "background": {
     "service_worker": "background.js"

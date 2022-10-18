@@ -35,6 +35,9 @@ body {
 .outputText {
   margin: 20px 20px;
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
 }
 
