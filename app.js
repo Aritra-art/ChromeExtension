@@ -5,6 +5,8 @@ const outputText = document.querySelector(".outputText");
 const userArray = [
   "https://www.linkedin.com/in/aritra-chowdhury-b95a66227/",
   "https://www.linkedin.com/in/siddhant-srivastava-bit/",
+  "https://www.linkedin.com/in/sudipta-chakraborty-4a371a212/",
+  "https://www.linkedin.com/in/vivekd0110/",
 ];
 
 const profileEventHandler = () => {
