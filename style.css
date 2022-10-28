@@ -1,7 +1,32 @@
 body {
   margin: 1rem;
   background-color: #e5e7eb;
+  width: 20rem;
 
+}
+
+.userInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  margin: 10px 0px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: orange;
+}
+
+input {
+  height: 2rem;
+  width: 80%;
+  text-align: center;
+  outline: none;
+  padding: 5px 10px;
+  font-size: 1.3rem;
 }
 
 .heading {
@@ -11,7 +36,7 @@ body {
   justify-content: center;
 }
 
-#check {
+#count {
   margin: 20px 20px;
   cursor: pointer;
   padding: 1.2rem;
@@ -26,7 +51,7 @@ body {
   transition: 400ms ease-in-out;
 }
 
-#check:hover {
+#count:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
   color: orange;
