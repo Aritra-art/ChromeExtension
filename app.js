@@ -29,7 +29,8 @@ const formValue = document.querySelector(".userInput");
 
 count.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log("clicked");
+  console.log(likeNum.value);
+  console.log(commentNum.value);
 });
 
 formValue.addEventListener("input", () => {
@@ -38,6 +39,14 @@ formValue.addEventListener("input", () => {
   } else {
     count.setAttribute("disabled", "disabled");
   }
+
+  if (Number(likeNum.value) < 0) {
+    likeNum.value = "";
+  } // cannot put negative number
+
+  if (Number(commentNum.value) < 0) {
+    commentNum.value = "";
+  } // cannot put negative number
 });
 
 clear.addEventListener("click", (e) => {
