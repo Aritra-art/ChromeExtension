@@ -25,14 +25,15 @@ const likeNum = document.querySelector("#like");
 const commentNum = document.querySelector("#comment");
 const count = document.querySelector("#count");
 const clear = document.querySelector("#clear");
+const formValue = document.querySelector(".userInput");
 
 count.addEventListener("click", (e) => {
   e.preventDefault();
   console.log("clicked");
 });
 
-likeNum.addEventListener("input", () => {
-  if (likeNum.value.length > 0) {
+formValue.addEventListener("input", () => {
+  if (likeNum.value.length > 0 && commentNum.value.length > 0) {
     count.removeAttribute("disabled");
   } else {
     count.setAttribute("disabled", "disabled");
