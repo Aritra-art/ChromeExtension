@@ -9,9 +9,9 @@
   "icons": {
     "16": "logo.png"
   },
-  "permissions": ["tabs", "scripting"],
+  "permissions": ["tabs", "scripting", "activeTab"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "app.js"
   },
   "content_scripts": [
     {

@@ -21,6 +21,7 @@
 // }
 
 // check.addEventListener("click", profileEventHandler);
+const url = "https://www.linkedin.com/feed/";
 const likeNum = document.querySelector("#like");
 const commentNum = document.querySelector("#comment");
 const count = document.querySelector("#count");
@@ -29,8 +30,13 @@ const formValue = document.querySelector(".userInput");
 
 count.addEventListener("click", (e) => {
   e.preventDefault();
-  console.log(likeNum.value);
-  console.log(commentNum.value);
+  window.open(url, "_blank");
+  chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+    // returns tab list based on query. we want active tab
+    let activeTab = tabs[0]; // only one tab in the tablist
+    console.log(activeTab);
+    chrome.tabs.sendMessage(activeTab.id, { likeNum: likeNum.value });
+  });
 });
 
 formValue.addEventListener("input", () => {

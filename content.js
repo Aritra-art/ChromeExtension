@@ -21,3 +21,8 @@
 // console.log("Contact Info");
 // console.log(moreInfoTwo[0].innerText);
 // console.log(moreInfoTwo[1].innerText);
+
+// console.log(likeNum.value);
+// const likeNum = document.querySelector("#like");
+// const commentNum = document.querySelector("#comment");
+
